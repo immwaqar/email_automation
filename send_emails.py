@@ -6,6 +6,7 @@ from pathlib import Path
 
 from dotenv import load_dotenv   ### pip install python-dotenv
 
+### you have to use post according to your email_server
 PORT = 587
 EMAIL_SERVER = "smtp-mail.outlook.com"
 
@@ -66,7 +67,7 @@ if __name__ == "__main__":
     send_email(
         subject="Invoice Reminder",
         name="Muhammad",
-        receiver_email="imwaqar911@gmail.com",
+        receiver_email="your email",
         due_date="05, May 2024",
         invoice_no="INV-21-21",
         amount="5",
